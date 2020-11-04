@@ -33,7 +33,7 @@ get :: State s s
 get = S $ \s -> (s, s)
 
 put :: s -> State s ()
-put s' = S $ const ((), s')
+put s' = S $ \_s -> ((), s')
 
 modify :: (s -> s) -> State s ()
 modify f = do

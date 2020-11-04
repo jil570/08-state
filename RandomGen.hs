@@ -2,6 +2,9 @@
 
 module RandomGen where
 
+-- make sure you have filled in all of the 'undefined' values
+-- in the State module.
+
 import Control.Monad
 import State
 import System.Random (StdGen, next, randomIO)
